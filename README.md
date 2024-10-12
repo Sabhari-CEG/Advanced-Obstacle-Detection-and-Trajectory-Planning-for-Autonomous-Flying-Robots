@@ -38,6 +38,29 @@ The algorithm implemented in this project involves several key components:
    - Displays the robot's trajectory with green lines and marks the bounding box and speed at intervals along the path.
    - Provides a visual representation of the robot's planned path and speed adjustments.
 
+## Analysis of the Algorithm
+
+### Obstacle Detection
+- Successfully detects multiple objects such as vehicles and pedestrians with blue bounding boxes.
+- Covers a wide area, effectively capturing both large and small objects.
+
+### Trajectory Planning
+- Green lines indicate predicted trajectory, navigating through the environment while avoiding obstacles.
+- Red text represents speed annotations at specific intervals.
+
+### Action Decision
+- "Action: Accelerate" suggests safe conditions for increasing speed based on current distances and trajectory predictions.
+
+### Interpretation
+- **Effectiveness**: The algorithm effectively identifies obstacles and plans a safe trajectory.
+- **Decision Logic**: Acceleration decisions indicate perceived clear paths ahead.
+- **Visualization**: Bounding boxes and trajectory lines provide clear visual representations of detected obstacles and planned movements.
+
+### Recommendations
+- **Fine-tuning Detection**: Ensure accurate detection of all relevant obstacles, especially near the planned path.
+- **Trajectory Adjustments**: Verify that predictions consistently avoid all obstacles in complex environments.
+- **Action Validation**: Regularly validate decision logic for appropriate actions given obstacle proximity and movement.
+
 ## Features
 
 - **Real-Time Obstacle Detection**: Utilizes state-of-the-art machine learning algorithms to identify and classify obstacles using sensor data.
@@ -61,4 +84,7 @@ The SYNTHIA dataset is organized into several folders, each containing different
 A typical sample from the SYNTHIA dataset includes an RGB image paired with its corresponding depth map and ground truth segmentation. This comprehensive data allows for robust training of models in tasks such as object detection and depth estimation.
 
 ![Sample Image](0000028.png) <!-- Add a sample image from the dataset here -->
+
+###Results
+![Result 1](res1.png)
 
