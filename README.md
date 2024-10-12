@@ -85,6 +85,24 @@ A typical sample from the SYNTHIA dataset includes an RGB image paired with its 
 
 ![Sample Image](0000028.png) <!-- Add a sample image from the dataset here -->
 
-###Results
+## Results
 ![Result 1](res1.png)
+
+![Result 2](res2.png)
+
+![Result 3](res3.png)
+
+![Result 4](res4.png)
+
+![Result 5](res5.png)
+
+![Result 6](res6.png)
+
+![Result 7](res7.png)
+
+![Result 8](res8.png)
+
+![Result 9](res9.png)
+
+![Result 10](res10.png)
 
