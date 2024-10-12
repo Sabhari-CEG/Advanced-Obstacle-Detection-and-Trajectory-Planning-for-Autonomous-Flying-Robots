@@ -19,3 +19,21 @@ Our autonomous flying robot is designed with the following capabilities:
 - **Dynamic Trajectory Planning**: Employs predictive modeling to simulate future paths, allowing proactive course adjustments.
 - **Scalable AI Integration**: Built on a scalable AI framework adaptable for various autonomous systems.
 
+- ## SYNTHIA Dataset
+
+I utilized the [SYNTHIA dataset](https://www.kaggle.com/datasets/tzokas027/synthia) for training and testing our model. This dataset is known for its synthetic images that provide detailed annotations for various urban scenes.
+
+### Structure
+
+The SYNTHIA dataset is organized into several folders, each containing different types of data:
+
+- **RGB**: Contains color images that simulate real-world urban environments.
+- **Depth**: Provides depth maps corresponding to each RGB image, useful for distance estimation.
+- **GT (Ground Truth)**: Includes semantic segmentation masks that label different objects within the scene.
+
+### Sample Image
+
+A typical sample from the SYNTHIA dataset includes an RGB image paired with its corresponding depth map and ground truth segmentation. This comprehensive data allows for robust training of models in tasks such as object detection and depth estimation.
+
+![Sample Image](https://www.researchgate.net/publication/311969302/figure/fig8/AS:668461978107908@1536385163244/Images-sampled-from-SYNTHIA-dataset-Note-that-they-are-not-always-corresponding-to-a.jpg) <!-- Add a sample image from the dataset here -->
+
