@@ -1,0 +1,2 @@
+# Advanced-Obstacle-Detection-and-Trajectory-Planning-for-Autonomous-Flying-Robots
+This project demonstrates a sophisticated AI-driven system for autonomous flying robots, featuring real-time obstacle detection, dynamic trajectory planning, and adaptive speed control. It enhances safety and efficiency in navigation, showcasing advanced applications in autonomous driving, robotics, and computer vision.
