@@ -5,13 +5,38 @@ This project demonstrates a sophisticated AI-driven system for autonomous flying
 
 This project showcases a cutting-edge solution for autonomous navigation in dynamic environments, leveraging advanced AI and computer vision technologies. Our system is designed to enhance the safety and efficiency of flying robots by integrating real-time obstacle detection, collision avoidance, and trajectory planning.
 
-## Robot Assumptions
+## Problem Statement
 
-Our autonomous flying robot is designed with the following capabilities:
+In dynamic environments, autonomous flying robots face challenges in safely navigating through obstacles while maintaining efficient trajectory planning. The primary objective of this project is to develop a robust system that enables flying robots to detect obstacles in real-time and plan their future trajectory to avoid collisions while optimizing their speed and path.
 
-- **Flying Capabilities**: The robot can fly up and down, allowing it to navigate through three-dimensional spaces effectively.
-- **Directional Movement**: It can move in all four horizontal directions (forward, backward, left, right), providing comprehensive maneuverability.
-- **Adaptive Speed Control**: The robot adjusts its speed dynamically based on proximity to obstacles, ensuring safe navigation.
+## Assumptions
+
+- **Robot Capabilities**: The robot can fly up and down, move in all four horizontal directions (forward, backward, left, right), and adjust its speed dynamically.
+- **Speed Range**: The robot's speed is limited to a range of 0 to 10 mph to ensure safe navigation.
+- **Environment**: The environment is assumed to be a 3D space with potential obstacles that the robot must navigate around.
+
+## Algorithm
+
+The algorithm implemented in this project involves several key components:
+
+1. **Obstacle Detection**: 
+   - Utilizes a pre-trained Faster R-CNN model to detect obstacles in RGB images.
+   - Processes images to identify bounding boxes around detected obstacles.
+
+2. **Distance Estimation**:
+   - Calculates the average depth within each detected bounding box using depth maps from the SYNTHIA dataset.
+
+3. **Decision Making**:
+   - Determines actions (accelerate, decelerate, maintain) based on the distance to the nearest obstacle and current speed.
+   - Uses a safe stopping distance calculation to ensure collision avoidance.
+
+4. **Trajectory Prediction**:
+   - Predicts the future positions and speeds of the robot over the next 50 states.
+   - Ensures that all predicted steps are collision-free by checking against detected obstacles.
+
+5. **Visualization**:
+   - Displays the robot's trajectory with green lines and marks the bounding box and speed at intervals along the path.
+   - Provides a visual representation of the robot's planned path and speed adjustments.
 
 ## Features
 
